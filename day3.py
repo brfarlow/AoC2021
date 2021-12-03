@@ -20,13 +20,11 @@ def part_1(lines):
 
 
 def part2(lines):
-
     oxygen_rating = lines
     carbon_rating = oxygen_rating.copy()
     length = len(lines[0])
 
     for bit in range(length):
-
         oxygen_bits = [x[bit] for x in oxygen_rating]
 
         if oxygen_bits.count('1') >= oxygen_bits.count('0'):
@@ -38,7 +36,6 @@ def part2(lines):
             break
 
     for bit in range(len(carbon_rating[0])):
-
         carbon_bits = [x[bit] for x in carbon_rating]
 
         if carbon_bits.count('1') >= carbon_bits.count('0'):
